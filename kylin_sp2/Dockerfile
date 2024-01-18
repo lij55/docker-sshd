@@ -1,6 +1,6 @@
 FROM kylinos:v10-sp2
 
-RUN yum -y install openssh-server passwd bash sudo \
+RUN yum -y install hostname python2 openssh-server passwd bash sudo \
     && yum clean all
 
 ADD ./start.sh /start.sh
